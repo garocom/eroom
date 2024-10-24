@@ -33,13 +33,18 @@
 </head>
 <body>
     <h1>전기실 1 입장 기록</h1>
-    <form action="https://eroom.vercel.app/submit-entry" method="POST">
+    
+    <!-- 폼 시작: 데이터를 submit-entry로 보냄 -->
+    <form action="/submit-entry" method="POST">
+        <!-- 이름 필드 -->
         <label for="name">이름:</label>
-        <input type="text" id="name" name="name" required><br>
-
+        <input type="text" id="name" name="name" required>
+        
+        <!-- 출입 목적 필드 -->
         <label for="purpose">출입 목적:</label>
-        <input type="text" id="purpose" name="purpose" required><br>
-
+        <input type="text" id="purpose" name="purpose" required>
+        
+        <!-- 제출 버튼 -->
         <button type="submit">입장 기록하기</button>
     </form>
 </body>
