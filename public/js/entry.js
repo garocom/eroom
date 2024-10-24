@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const formData = new FormData(form);
 
-        const response = await fetch("/submit-exit", {
+        const response = await fetch("/submit-entry", {
             method: "POST",
             body: formData,
         });
 
         if (response.ok) {
-            alert("퇴장 기록이 완료되었습니다.");
+            alert("입장 기록이 완료되었습니다.");
         } else {
             alert("오류가 발생했습니다. 다시 시도하세요.");
         }
