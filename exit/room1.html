@@ -7,12 +7,14 @@
 </head>
 <body>
     <h1>전기실 1 퇴장 기록</h1>
-    <form action="/submit-exit" method="POST">
-        <label for="name">이름:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="notes">비고:</label>
-        <input type="text" id="notes" name="notes"><br>
-        <button type="submit">기록하기</button>
-    </form>
+<form action="https://eroom.vercel.app/submit-entry" method="POST">
+
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="notes">비고:</label>
+    <input type="text" id="notes" name="notes"><br>
+    <button type="submit">기록하기</button>
+</form>
+
 </body>
 </html>
