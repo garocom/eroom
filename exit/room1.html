@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>전기실 1 퇴장 기록</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <h1>전기실 1 퇴장 기록</h1>
-<form action="https://eroom.vercel.app/submit-entry" method="POST">
+    <form action="https://eroom.vercel.app/submit-exit" method="POST">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required><br>
 
-    <label for="name">이름:</label>
-    <input type="text" id="name" name="name" required><br>
-    <label for="notes">비고:</label>
-    <input type="text" id="notes" name="notes"><br>
-    <button type="submit">기록하기</button>
-</form>
+        <label for="notes">비고:</label>
+        <input type="text" id="notes" name="notes"><br>
 
+        <button type="submit">퇴장 기록하기</button>
+    </form>
 </body>
 </html>
